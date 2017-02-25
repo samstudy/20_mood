@@ -2,24 +2,44 @@
 <html>
 <head>
   <title>Настроение</title>
-  <script id="quotes_json" type="application/json">
-    [
-      {
-        "phrase": "Кукурузные хлопья - теперь без асбеста!",
-        "signature": "©Неизвестный маркетолог"
-      },
-      {
-        "phrase": "Собираюсь жить вечно, пока всё идёт нормально"
-      },
-      {
-        "phrase": "Вывеска над кафе — '\u003cМы открылись\u003e'. Что-то не так. Где же '\u003c/Мы открылись\u003e'?"
-      },
-      {
-        "phrase": "Если ты будешь усердно работать по 8 часов в день, то обязательно станешь боссом и начнешь работать по 12"
-      }
-    ]
-  </script>
+  <meta charset="utf-8">
+      <link href="css/main.css" type="text/css" rel="stylesheet">
+ 
 </head>
 <body>
+<ul>
+    <li>
+      <a href="#" onclick="Jvanetskiy()">
+     <h2>Жванецкий</h2>
+        <p id="joke1"></p>
+      </a>
+    </li>
+    <li>
+      <a href="#" onclick="Sjokes()">
+        <h2>Шутки</h2>
+        <p id="joke2"></p>
+      </a>
+    </li>
+    <li>
+      <a href="#"onclick="KvnJokes()">
+        <h2>Шутки КВН</h2>
+        <p id="joke3"></p>
+      </a>
+    </li>
+    <li>
+      <a href="#" onclick="Quote()">
+        <h2>Цитаты и Афоризмы</h2>
+        <p id="joke4"></p>
+      </a>
+    </li>
+    <li>
+      <a href="#" onclick="Comedy()">
+        <h2>Камеди Клаб</h2>
+        <p id="joke5"></p>
+      </a>
+    </li>
+  </ul>
+  <script src="js/main.js"></script>
 </body>
 </html>
+
