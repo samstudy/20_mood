@@ -1,6 +1,11 @@
 # Site for the Mood
 
-[TODO. There will be project description]
+____
+> **The site has done for make good moode,during click on stickers you will find awesome quotes or jokes**
+
+
+A result you may find [Here](https://samstudy.github.io/20_mood/index)
+
 
 # Project Goals
 
