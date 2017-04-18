@@ -9,19 +9,26 @@ body{
   background:#666;
   color:#fff;
 }
+
+.note{
+	font-weight:bold;
+	font-family:"Reenie Beanie",arial,sans-serif;
+	overflow:hidden;
+    padding:3em;
+}
+
 h2,p{
-  font-size:100%;
+  font-size;
   font-weight:normal;
   text-align:center;
 }
-ul,li{
+li{
   list-style:none;
+  margin:1em;
+  float:left;
 }
-ul{
-  overflow:hidden;
-  padding:3em;
-}
-ul li a{
+
+a{
   text-decoration:none;
   color:#000;
   background:#ffc;
@@ -35,27 +42,23 @@ ul li a{
   -moz-transition:-moz-transform .15s linear;
   -o-transition:-o-transform .15s linear;
   -webkit-transition:-webkit-transform .15s linear;
-}
-ul li{
-  margin:1em;
-  float:left;
-}
-ul li h2{
-  font-size:140%;
-  font-weight:bold;
-  padding-bottom:10px;
-}
-ul li p{
-  font-family:"Reenie Beanie",arial,sans-serif;
-  font-size:15px;
-  text-align:center;
-}
-ul li a{
   -webkit-transform: rotate(-6deg);
   -o-transform: rotate(-6deg);
   -moz-transform:rotate(-6deg);
+  
 }
-ul li:nth-child(even) a{
+
+h2{
+  font-size:140%;
+  padding-bottom:10px;
+}
+
+p{
+  font-size:15px;
+  text-align:center;
+}
+
+li:nth-child(even) a{
   -o-transform:rotate(4deg);
   -webkit-transform:rotate(4deg);
   -moz-transform:rotate(4deg);
@@ -63,7 +66,7 @@ ul li:nth-child(even) a{
   top:5px;
   background:#cfc;
 }
-ul li:nth-child(3n) a{
+li:nth-child(3n) a{
   -o-transform:rotate(-3deg);
   -webkit-transform:rotate(-3deg);
   -moz-transform:rotate(-3deg);
@@ -71,14 +74,14 @@ ul li:nth-child(3n) a{
   top:-5px;
   background:#ccf;
 }
-ul li:nth-child(5n) a{
+li:nth-child(5n) a{
   -o-transform:rotate(5deg);
   -webkit-transform:rotate(5deg);
   -moz-transform:rotate(5deg);
   position:relative;
   top:-10px;
 }
-ul li a:hover,ul li a:focus{
+.note a:hover,.note a:focus{
   box-shadow:10px 10px 7px rgba(0,0,0,.7);
   -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
   -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
@@ -88,9 +91,7 @@ ul li a:hover,ul li a:focus{
   position:relative;
   z-index:5;
 }
-ol{text-align:center;}
-ol li{display:inline;padding-right:1em;}
-ol li a{color:#fff;}
+
 
 
 button{
