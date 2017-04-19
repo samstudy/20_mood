@@ -6,10 +6,11 @@ var jvanetskiyjoke = [
 "Весь день не спишь, всю ночь не ешь, — конечно, устаешь.",
 "Жить нужно так, чтобы на социальные сети не хватало времени."]
 
-
-function InsertJvanetskiyJoke(){
-    var randomJokesJv = Math.floor(Math.random()*(jvanetskiyjoke.length));
-document.getElementById("js-joke1").innerHTML = (jvanetskiyjoke[randomJokesJv]).replace(/(<([^>]+)>)/ig,"");}
+$( "#InsertJvanetskiyJoke" ).click(function() {
+	var randomJokes = Math.floor(Math.random()*(5));
+    $("#js-joke1").text(jvanetskiyjoke[randomJokes]);
+	console.log("#js-joke1")
+});
 
 
 var simplejokes = [
@@ -19,15 +20,16 @@ var simplejokes = [
 "Жить нужно так, чтобы на социальные сети не хватало времени."]
 
 
-function InsertSimpleJoke(){
-    var randomSimplejokes = Math.floor(Math.random()*(simplejokes.length));
-document.getElementById("js-joke2").innerHTML = (simplejokes[randomSimplejokes]).replace(/(<([^>]+)>)/ig,"");}
-
+$( "#InsertSimpleJoke" ).click(function() {
+	var randomJokes = Math.floor(Math.random()*(5));
+    $("#js-joke2").text(simplejokes[randomJokes]);
+	console.log("#js-joke2")
+});
 
 
 
 var jokesKvn = [
-"Санкт-Петербург настолько <h1>sd</h1>толерантный город, что там даже карликов называют афроамериканцами.",
+"Санкт-Петербург настолько толерантный город, что там даже карликов называют афроамериканцами.",
 "В рамках программы поддержки автопрома АвтоВАЗу разрешили торговать наркотиками",
 "Спортсмен-дебил пришел на финиш первым, хотя должен был ядро толкнуть",
 "Мальчик играл с огнем..... и выиграл",
@@ -35,25 +37,27 @@ var jokesKvn = [
 "Вчера на концерте «Кривого зеркала» в сцену ударила молния. Ребята, вас уже господь предупреждает!"]
 
 
-
-function InsertKvnJokes(){
-    var randomJokesKvn = Math.floor(Math.random()*(jokesKvn.length));
-document.getElementById("js-joke3").innerHTML = jokesKvn[randomJokesKvn];}
-
+$( "#InsertKvnJokes" ).click(function() {
+	var randomJokes = Math.floor(Math.random()*(5));
+    $("#js-joke3").text(jokesKvn[randomJokes]);
+	console.log("#js-joke3")
+});
 
 
 
 var quote = [
-"Самый бедный человек не тот, у кого нет ни дома, ни семьи,<h1>asas</h1> ни гроша в кармане, а тот, у кого нет мечты(Сократ)",
+"Самый бедный человек не тот, у кого нет ни дома, ни семьи,ни гроша в кармане, а тот, у кого нет мечты(Сократ)",
 "Любое препятствие преодолевается настойчивостью(да Винчи)",
 "Для того чтобы получилось, нужно пробовать.",
 "Если проблему можно решить за деньги, то это не проблема - это расходы.",
 "Не бойтесь расти медленно, бойтесь оставаться неизменными."]
 
 
-function InsertQuote(){
-    var randomQuote = Math.floor(Math.random()*(quote.length));
-document.getElementById("js-joke4").innerHTML = quote[randomQuote];}
+$( "#InsertQuote" ).click(function() {
+	var randomJokes = Math.floor(Math.random()*(5));
+    $("#js-joke4").text(quote[randomJokes]);
+	console.log("#js-joke4")
+});
 
 
 var comedy = [
@@ -64,15 +68,11 @@ var comedy = [
 "В рязанском цирке новая программа: медведи на мотоциклах, медведи чинят мотоциклы и медведи копят деньги на новые мотоциклы."]
 
 
-
-
-
-$( "#InsertComedyJoke" ).click(function() {
-	var randomQuote = Math.floor(Math.random()*(quote.length));
-  document.getElementById("$js-joke5").innerHTML = text('hi');
+  $( "#InsertComedyJoke" ).click(function() {
+	 var randomJokes = Math.floor(Math.random()*(5));
+    $("#js-joke5").text(comedy[randomJokes])	;
+	console.log("#js-joke5")
 });
-
-
 
 
 

@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
   <title>Настроение</title>
   <meta charset="utf-8">
       <link href="css/main.css" type="text/css" rel="stylesheet">
  
 </head>
 <body>
-<ul class="note1">
+<ul class="store">
     <li class="note">
-      <a class="content" href="#" onclick="InsertJvanetskiyJoke()" >
+      <a class="content" href="#" id="InsertJvanetskiyJoke" >
      <h2 class="header">Жванецкий</h2>
         <p class="joke" id="js-joke1"></p>
       </a>
     </li>
     <li class="note">
-      <a  class="content" href="#" onclick="InsertSimpleJoke()">
+      <a  class="content" href="#" id="InsertSimpleJoke">
         <h2 class="header">Шутки</h2>
         <p class="joke" id="js-joke2"></p>
       </a>
     </li>
     <li class="note">
-      <a class="content" href="#" onclick="InsertKvnJokes()">
+      <a class="content" href="#" id="InsertKvnJokes">
         <h2 class="header">Шутки КВН</h2>
         <p class="joke" id="js-joke3"></p>
       </a>
     </li>
     <li class="note">
-      <a class="content" href="#" onclick="InsertQuote()">
+      <a class="content" href="#" id="InsertQuote">
         <h2 class="header">Цитаты и Афоризмы</h2>
         <p class="joke" id="js-joke4"></p>
       </a>
@@ -39,9 +39,10 @@
         <p class="joke" id="js-joke5"></p>
       </a>
     </li>
-	</div>
+  </div>
   </ul>
-
+  
+ <script src="http://code.jquery.com/jquery-latest.js"></script>
   <script src="js/main.js"></script>
  
 </body>
