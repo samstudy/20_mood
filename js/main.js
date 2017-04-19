@@ -7,9 +7,9 @@ var jvanetskiyjoke = [
 "Жить нужно так, чтобы на социальные сети не хватало времени."]
 
 
-function GetJvanetskiyJoke(){
+function InsertJvanetskiyJoke(){
     var randomJokesJv = Math.floor(Math.random()*(jvanetskiyjoke.length));
-document.getElementById("joke1").innerHTML = (jvanetskiyjoke[randomJokesJv]).replace(/(<([^>]+)>)/ig,"");}
+document.getElementById("js-joke1").innerHTML = (jvanetskiyjoke[randomJokesJv]).replace(/(<([^>]+)>)/ig,"");}
 
 
 var simplejokes = [
@@ -19,14 +19,15 @@ var simplejokes = [
 "Жить нужно так, чтобы на социальные сети не хватало времени."]
 
 
-function GetSimpleJoke(){
+function InsertSimpleJoke(){
     var randomSimplejokes = Math.floor(Math.random()*(simplejokes.length));
-document.getElementById("joke2").innerHTML = (simplejokes[randomSimplejokes]).replace(/(<([^>]+)>)/ig,"");}
+document.getElementById("js-joke2").innerHTML = (simplejokes[randomSimplejokes]).replace(/(<([^>]+)>)/ig,"");}
+
 
 
 
 var jokesKvn = [
-"Санкт-Петербург настолько толерантный город, что там даже карликов называют афроамериканцами.",
+"Санкт-Петербург настолько <h1>sd</h1>толерантный город, что там даже карликов называют афроамериканцами.",
 "В рамках программы поддержки автопрома АвтоВАЗу разрешили торговать наркотиками",
 "Спортсмен-дебил пришел на финиш первым, хотя должен был ядро толкнуть",
 "Мальчик играл с огнем..... и выиграл",
@@ -35,22 +36,24 @@ var jokesKvn = [
 
 
 
-function GetKvnJokes(){
+function InsertKvnJokes(){
     var randomJokesKvn = Math.floor(Math.random()*(jokesKvn.length));
-document.getElementById("joke3").innerHTML = (jokesKvn[randomJokesKvn]).replace(/(<([^>]+)>)/ig,"");}
+document.getElementById("js-joke3").innerHTML = jokesKvn[randomJokesKvn];}
+
+
 
 
 var quote = [
-"Самый бедный человек не тот, у кого нет ни дома, ни семьи, ни гроша в кармане, а тот, у кого нет мечты(Сократ)",
+"Самый бедный человек не тот, у кого нет ни дома, ни семьи,<h1>asas</h1> ни гроша в кармане, а тот, у кого нет мечты(Сократ)",
 "Любое препятствие преодолевается настойчивостью(да Винчи)",
 "Для того чтобы получилось, нужно пробовать.",
 "Если проблему можно решить за деньги, то это не проблема - это расходы.",
 "Не бойтесь расти медленно, бойтесь оставаться неизменными."]
 
 
-function GetQuote(){
+function InsertQuote(){
     var randomQuote = Math.floor(Math.random()*(quote.length));
-document.getElementById("joke4").innerHTML = (quote[randomQuote]).replace(/(<([^>]+)>)/ig,"");}
+document.getElementById("js-joke4").innerHTML = quote[randomQuote];}
 
 
 var comedy = [
@@ -61,10 +64,13 @@ var comedy = [
 "В рязанском цирке новая программа: медведи на мотоциклах, медведи чинят мотоциклы и медведи копят деньги на новые мотоциклы."]
 
 
-function GetComedyJoke(){
-    var randomComedy = Math.floor(Math.random()*(comedy.length));
-document.getElementById("joke5").innerHTML = (comedy[randomComedy]).replace(/(<([^>]+)>)/ig,"");}
 
+
+
+$( "#InsertComedyJoke" ).click(function() {
+	var randomQuote = Math.floor(Math.random()*(quote.length));
+  document.getElementById("$js-joke5").innerHTML = text('hi');
+});
 
 
 
