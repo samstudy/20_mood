@@ -7,9 +7,8 @@ var jvanetskiyjoke = [
 "Жить нужно так, чтобы на социальные сети не хватало времени."]
 
 $( "#InsertJvanetskiyJoke" ).click(function() {
-	var randomJokes = Math.floor(Math.random()*(5));
+    var randomJokes = Math.floor(Math.random()*(5));
     $("#js-joke1").text(jvanetskiyjoke[randomJokes]);
-	console.log("#js-joke1")
 });
 
 
@@ -21,9 +20,8 @@ var simplejokes = [
 
 
 $( "#InsertSimpleJoke" ).click(function() {
-	var randomJokes = Math.floor(Math.random()*(5));
+    var randomJokes = Math.floor(Math.random()*(5));
     $("#js-joke2").text(simplejokes[randomJokes]);
-	console.log("#js-joke2")
 });
 
 
@@ -38,9 +36,8 @@ var jokesKvn = [
 
 
 $( "#InsertKvnJokes" ).click(function() {
-	var randomJokes = Math.floor(Math.random()*(5));
+    var randomJokes = Math.floor(Math.random()*(5));
     $("#js-joke3").text(jokesKvn[randomJokes]);
-	console.log("#js-joke3")
 });
 
 
@@ -54,9 +51,8 @@ var quote = [
 
 
 $( "#InsertQuote" ).click(function() {
-	var randomJokes = Math.floor(Math.random()*(5));
+    var randomJokes = Math.floor(Math.random()*(5));
     $("#js-joke4").text(quote[randomJokes]);
-	console.log("#js-joke4")
 });
 
 
@@ -69,11 +65,6 @@ var comedy = [
 
 
   $( "#InsertComedyJoke" ).click(function() {
-	 var randomJokes = Math.floor(Math.random()*(5));
-    $("#js-joke5").text(comedy[randomJokes])	;
-	console.log("#js-joke5")
+     var randomJokes = Math.floor(Math.random()*(5));
+    $("#js-joke5").text(comedy[randomJokes]);
 });
-
-
-
-
