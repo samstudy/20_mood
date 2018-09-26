@@ -68,3 +68,37 @@ var comedy = [
      var randomJokes = Math.floor(Math.random()*(5));
     $("#js-joke5").text(comedy[randomJokes]);
 });
+
+
+function myFunction() {
+    var userLang = navigator.language || navigator.userLanguage; 
+	if (userLang == "ru-RU") {
+	    var conf_msg = confirm("Сайт содержит Flash-контент. Хотите узнать, как включить плагин Flash");
+		}
+	else if (userLang == "en-US"){
+	    var conf_msg = confirm("Do you want to know how enable Flush plugin	");
+	}
+    if (conf_msg == true) {
+        window.location.assign('https://support.google.com/chrome/answer/142064')
+		//window.open('https://support.google.com/chrome/answer/142064')
+    } 
+}
+function checkFlashSupport() {
+  var hasFlash = false;
+  
+  try {
+    hasFlash = Boolean(new ActiveXObject('ShockwaveFlash.ShockwaveFlash'));
+  } catch(exception) {
+      hasFlash = ('undefined' != typeof navigator.mimeTypes['application/x-shockwave-flash']);
+  }
+  
+  return hasFlash;
+}
+checkFlash=checkFlashSupport()
+if (checkFlash ==false){
+	setTimeout(myFunction, 5000)
+}
+
+
+
+ 
